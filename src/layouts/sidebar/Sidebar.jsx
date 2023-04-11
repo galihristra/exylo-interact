@@ -22,10 +22,10 @@ const Sidebar = () => {
   const navigateToMenu = menu => setActiveMenu(menu);
 
   return (
-    <div>
-      <div className="bg-darkblue h-screen w-72 p-4 text-lightgray">
+    <>
+      <div className="bg-sidebar fixed top-0 h-screen w-[250px] p-4 text-lightgray m-0">
         {/* Logo */}
-        <div className="mb-10 text-white flex flex-row items-center ml-1">
+        <div className="mb-12 text-white flex flex-row items-center ml-1">
           <span className="mr-2">
             <InteractLogo />
           </span>
@@ -38,14 +38,14 @@ const Sidebar = () => {
             <li key={key} onClick={() => navigateToMenu(key)}>
               <a
                 href="#"
-                className={`py-3 px-2 my-2 rounded-md flex flex-row items-center hover:bg-darkblueactive ${
-                  activeMenu === key ? 'bg-darkblueactive' : ''
+                className={`py-3 px-2 my-2 rounded-md flex flex-row items-center hover:bg-sidebaractive ${
+                  activeMenu === key ? 'bg-sidebaractive' : ''
                 } cursor-pointer`}
               >
                 <span className="w-10">{icon}</span>
                 {label}
                 {badge && (
-                  <div className="ml-auto bg-lightgreen px-1 rounded-sm text-sm text-black">
+                  <div className="ml-auto bg-lightgreen px-1.5 rounded-sm text-sm text-black">
                     {badge}
                   </div>
                 )}
@@ -54,7 +54,7 @@ const Sidebar = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
