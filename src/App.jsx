@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Header, Sidebar } from './layouts';
 import { Home } from './pages';
 import { PageHeader } from './components';
@@ -18,7 +18,7 @@ function App() {
         <Header />
 
         <div className="mt-[48px] overflow-x-hidden flex-grow">
-          <main className="min-w-0 flex p-8">
+          <main className="min-w-0 flex flex-col p-8">
             <PageHeader />
             <Home />
           </main>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PageHeader = () => {
   return (
-    <div>
+    <div className="mb-8">
       <div className="text-[30px] font-semibold">Marketing Dashboard</div>
       <nav className="w-full text-sm">
         <ol className="flex">

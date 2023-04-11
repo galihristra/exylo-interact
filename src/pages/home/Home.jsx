@@ -1,9 +1,10 @@
 import React from 'react';
+import { TopPanel } from './components';
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-between h-full text-white">
-      {/* <div className="text-[30px]">Marketing Dashboard</div> */}
+    <div>
+      <TopPanel />
     </div>
   );
 };
