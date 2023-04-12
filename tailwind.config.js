@@ -12,7 +12,6 @@ export default {
         sidebaractive: '#1F2849',
         'darkblue-26': '#151A2E',
         'darkblue-24': '#1C243F',
-        lightgray: '#6C747D',
         primarygreen: '#0BB885',
         lightgreen: '#98FFE0',
         'black-46': '#6C747D',
