@@ -8,5 +8,6 @@ export { default as TrophyIcon } from './TrophyIcon';
 export { default as CalendarIcon } from './CalendarIcon';
 export { default as PieIcon } from './PieIcon';
 export { default as WalletIcon } from './WalletIcon';
+export { default as ArrowUpIcon } from './ArrowUpIcon';
 
 export { default as InteractLogo } from './InteractLogo';

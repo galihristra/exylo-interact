@@ -15,6 +15,8 @@ export default {
         primarygreen: '#0BB885',
         lightgreen: '#98FFE0',
         'black-46': '#6C747D',
+        orange: '#FF814A',
+        timelineborder: '#5C6CA5',
       },
     },
   },

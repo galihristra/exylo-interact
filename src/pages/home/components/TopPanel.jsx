@@ -45,14 +45,14 @@ const TopPanel = () => {
   const togglePanel = panel => setActivePanel(panel);
 
   return (
-    <div className="flex flex-row justify-evenly gap-5">
+    <div className="grid grid-cols-5 gap-4">
       {panelList.map(({ key, primary, secondary, icon }) => {
         const isActive = activePanel === key;
         return (
           <button
             key={key}
             disabled={isActive}
-            className={`rounded-md flex flex-row items-center gap-4 flex-1 text-start p-6 ${
+            className={`rounded-md flex flex-row items-center gap-4 text-start p-6 ${
               isActive ? 'bg-primarygreen' : 'bg-darkblue-24'
             } shadow-md`}
             onClick={() => togglePanel(key)}
