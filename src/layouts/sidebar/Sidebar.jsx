@@ -45,7 +45,7 @@ const Sidebar = () => {
                   } cursor-pointer`}
                 >
                   <span className="w-10">{icon}</span>
-                  <span className={`${isActive ? 'text-white' : 'text-lightgray'}`}>{label}</span>
+                  <span className={`${isActive ? 'text-white' : 'text-black-46'}`}>{label}</span>
                   {badge && (
                     <div className="ml-auto bg-lightgreen px-1.5 rounded-sm text-sm text-black">
                       {badge}
