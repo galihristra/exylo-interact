@@ -4,13 +4,6 @@ import { Home } from './pages';
 import { PageHeader } from './components';
 
 function App() {
-  useEffect(() => {
-    const importTE = async () => {
-      await import('tw-elements');
-    };
-    importTE();
-  }, []);
-
   return (
     <div className="w-screen">
       <Sidebar />

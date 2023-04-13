@@ -9,5 +9,6 @@ export { default as CalendarIcon } from './CalendarIcon';
 export { default as PieIcon } from './PieIcon';
 export { default as WalletIcon } from './WalletIcon';
 export { default as ArrowUpIcon } from './ArrowUpIcon';
+export { default as ChevronDownIcon } from './ChevronDownIcon';
 
 export { default as InteractLogo } from './InteractLogo';
