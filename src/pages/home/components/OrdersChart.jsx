@@ -1,17 +1,19 @@
 import React from 'react';
-import ApexChart from 'react-apexcharts';
 import { Card } from '../../../components';
 import { Bar } from 'react-chartjs-2';
 import { BarElement, CategoryScale, Chart, LinearScale } from 'chart.js';
+import { rgbaColors } from '../../../helpers/colors';
 
 Chart.register(CategoryScale, LinearScale, BarElement);
 
 const OrdersChart = () => {
   return (
     <Card>
-      <div className="p-6">
-        <div>Orders</div>
-        <div className="text-orange text-[28px]">189k</div>
+      <div className="p-6 h-full flex flex-col justify-between">
+        <div>
+          <div className="font-semibold">Orders</div>
+          <div className="text-orange text-[28px]">189k</div>
+        </div>
         <Bar
           height={100}
           width={160}
@@ -29,7 +31,7 @@ const OrdersChart = () => {
             datasets: [
               {
                 data: [6, 12, 8, 4, 10],
-                backgroundColor: 'rgba(255, 129, 74, 1)',
+                backgroundColor: rgbaColors.secondaryOrange,
                 barThickness: 6,
                 borderRadius: 20,
               },

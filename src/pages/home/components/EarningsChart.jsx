@@ -27,9 +27,9 @@ const EarningsChart = () => {
 
   return (
     <Card>
-      <div className="p-6 h-[100px]">
+      <div className="p-6">
         <div className="flex flex-row items-center justify-between">
-          <div>Earnings</div>
+          <div className="font-semibold">Earnings</div>
           <div className="dropdown">
             <label tabIndex={0} className="text-sm flex items-center text-neutral-400 gap-1">
               {period.label} <ChevronDownIcon />
@@ -50,7 +50,7 @@ const EarningsChart = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-row items-center gap-10">
+        <div className="flex flex-row items-center justify-between gap-2 mt-4 px-4">
           <ApexChart
             type="radialBar"
             options={{
@@ -65,7 +65,7 @@ const EarningsChart = () => {
               },
             }}
             series={[data.totalSales.progress, data.totalOrders.progress]}
-            width={165}
+            width={200}
             height={200}
           />
           <div className="text-xs flex flex-col gap-6">

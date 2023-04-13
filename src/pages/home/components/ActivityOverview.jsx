@@ -6,8 +6,8 @@ import { activityOverviewData } from '../data/mock-data';
 const ActivityOverview = () => {
   return (
     <Card>
-      <div className="p-6">
-        <div className="text-lg">Activity Overview</div>
+      <div className="p-6 flex flex-col">
+        <div className="text-lg font-semibold">Activity Overview</div>
         <div className="flex flex-row items-center my-4 gap-2">
           <ArrowUpIcon />
           <span>16% this month</span>
